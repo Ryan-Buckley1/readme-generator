@@ -46,7 +46,7 @@ function renderLicenseSection(license) {
   } else {
     return `
 ## License
-${renderLicenseBadge(license)}
+
 
 This project used ${license} license
 
@@ -59,19 +59,19 @@ ${renderLicenseLink(license)}
 function generateMarkdown(data) {
   console.log(data);
   return `# ${data.title}
-  
+  ${renderLicenseBadge(license)}
   
   ## Description
   ${data.description}
 
   ## Table of Contents
 
-  -[Installation](#installation)
-  -[Usage](#usage)
-  -[Contributing](#contributing)
-  -[License](#license)
-  -[Tests](#tests)
-  -[Questions](#questions)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
   ## Installation
   ${data.installInst}
