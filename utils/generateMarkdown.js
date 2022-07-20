@@ -18,18 +18,17 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  const userLicense = license;
   let licenseLink = "";
-  if (userLicense === "MIT") {
+  if (license === "MIT") {
     licenseLink = "https://opensource.org/licenses/MIT";
     return licenseLink;
-  } else if (userLicense === "Artistic") {
+  } else if (license === "Artistic") {
     licenseLink = "https://opensource.org/licenses/Artistic-2.0";
     return licenseLink;
-  } else if (userLicense === "The Unlicense") {
+  } else if (license === "The Unlicense") {
     licenseLink = "http://unlicense.org/";
     return licenseLink;
-  } else if (userLicense === "Do What The F*ck You Want To Public License") {
+  } else if (license === "Do What The F*ck You Want To Public License") {
     licenseLink = "http://www.wtfpl.net/about/";
     return licenseLink;
   } else {
@@ -59,7 +58,7 @@ ${renderLicenseLink(license)}
 function generateMarkdown(data) {
   console.log(data);
   return `# ${data.title}
-  ${renderLicenseBadge(license)}
+  ${renderLicenseBadge(data.license)}
   
   ## Description
   ${data.description}
