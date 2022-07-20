@@ -27,6 +27,10 @@ This project used MIT license
 
 https://opensource.org/licenses/MIT
     
+## Video Walkthrough
+
+https://youtu.be/Qvs20IIIwlc
+
 
   ## Contributing
   none
